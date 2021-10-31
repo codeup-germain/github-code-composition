@@ -13,6 +13,7 @@ To create the `data.json` file that contains the data.
 import os
 import json
 from typing import Dict, List, Optional, Union, cast
+from github_list import github_list
 import requests
 
 from env import github_token, github_username
@@ -24,11 +25,7 @@ from env import github_token, github_username
 # TODO: Add your github username to your env.py file under the variable `github_username`
 # TODO: Add more repositories to the `REPOS` list below.
 
-REPOS = [
-    "gocodeup/codeup-setup-script",
-    "gocodeup/movies-application",
-    "torvalds/linux",
-]
+REPOS = github_list
 
 headers = {"Authorization": f"token {github_token}", "User-Agent": github_username}
 
