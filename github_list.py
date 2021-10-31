@@ -1,5 +1,11 @@
 
+'''
+This is the list that acquire.py uses.  Make sure you acquire file imports this as:
 
+from github_list import github_list
+
+
+'''
 
 github_list = ['iterativv/NostalgiaForInfinity',
  'cl2333/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions',
