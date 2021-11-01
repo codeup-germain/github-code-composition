@@ -16,6 +16,7 @@ def prepare(df):
     # Clean will take the readme_contents feature and apply a lemmatized on it 
     df['lemmatized'] = df['clean'].apply(lemmatize)
 
+    # Split the data
     train, validate, test = split(df)
 
     return train, validate, test
