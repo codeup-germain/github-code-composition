@@ -9,6 +9,7 @@ import nltk
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 from nltk import sent_tokenize
+from sklearn.model_selection import train_test_split
 
 
 ################################## NLP ################################
@@ -42,3 +43,10 @@ def remove_stopwords(string):
     filtered_words = [word for word in words if word not in stopword_list]
     article_without_stopwords = ' '.join(filtered_words)
     return article_without_stopwords
+
+def split(df):
+    
+    train_validate, test = train_test_split(df, test_size=.2, random_state=123)
+    train, validate = train_test_split(train_validate, test_size=.3, random_state=123)
+
+    return train, validate, test

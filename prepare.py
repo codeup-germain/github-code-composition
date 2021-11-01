@@ -1,4 +1,4 @@
-from functions import basic_clean, tokenize, stem, lemmatize, remove_stopwords
+from functions import basic_clean, tokenize, stem, lemmatize, remove_stopwords, split
 
 def prepare(df):
     '''
@@ -16,4 +16,6 @@ def prepare(df):
     # Clean will take the readme_contents feature and apply a lemmatized on it 
     df['lemmatized'] = df['clean'].apply(lemmatize)
 
-    return df
+    train, validate, test = split(df)
+
+    return train, validate, test
