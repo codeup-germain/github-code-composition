@@ -46,7 +46,7 @@ def remove_stopwords(string):
 
 def split(df):
     
-    train, test = train_test_split(df, test_size=.2, random_state=123, stratify = df.language)
-    train, validate = train_test_split(train, test_size=.3, random_state=123, stratify = train.language)
+    train, test = train_test_split(df, test_size=.2, random_state=123)
+    train, validate = train_test_split(train, test_size=.3, random_state=123)
 
     return train, validate, test
