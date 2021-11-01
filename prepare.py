@@ -6,6 +6,11 @@ def prepare(df):
     and lemmatized columns along with its original contents.  
     '''
 
+    df = df[df.language != "Java"]
+
+    df = df[~df['language'].isnull()]
+    
+
     # Clean will take the readme_contents feature and apply a basic_clean, tokenize, and remove stopwords
     # functions on it.  
     df['clean'] = df.readme_contents.apply(basic_clean).apply(tokenize).apply(remove_stopwords)
@@ -15,6 +20,7 @@ def prepare(df):
 
     # Clean will take the readme_contents feature and apply a lemmatized on it 
     df['lemmatized'] = df['clean'].apply(lemmatize)
+
 
     # Split the data
     train, validate, test = split(df)
