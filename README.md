@@ -11,13 +11,8 @@
 <!-- Describe your project in brief -->
 
 # What is a github README.md?
-> - You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions
-> - A README is often the first item a visitor will see when visiting your repository. README files typically include information on:
-    > - What the project does
-    > - Why the project is useful
-    > - How users can get started with the project
-    > - Where users can get help with your project
-    > - Who maintains and contributes to the project
+- You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions
+- A README is often the first item a visitor will see when visiting your repository. README files typically include information on: What the project does, why the project is useful, how users can get started with the project, where users can get help with your project, and who maintains and contributes to the project
 
 # Executive Summary
 <!-- Add a demo for your project -->
@@ -47,8 +42,11 @@
 # Data Dictionary
 [(Back to top)](#table-of-contents)
 <!-- Drop that sweet sweet dictionary here-->
-| Feature    | Datatype                | Definition   |
-|:-----------|:------------------------|:-------------|
+| Feature         | Datatype             | Definition                                  |
+|:----------------|:---------------------|:--------------------------------------------|
+| repo            | 123 non-null: object | name of repository                          |
+| language        | 121 non-null: object | programming language project was written in |
+| readme_contents | 123 non_null: object | text contents of the readme                 |
 
 
 # Data Science Pipeline
@@ -56,42 +54,42 @@
 <!-- Describe your Data Science Pipeline process -->
 
 
-### Acquire
 [(Back to top)](#table-of-contents)
 <!-- Describe your acquire process -->
-> - Store functions that are needed to acquire data from the Zillow database on the Codeup data science database server; make sure the acquire.py module contains the necessary imports to run my code.
-> - The final function will return a pandas DataFrame.
-> - Import the acquire function from the acquire.py module
-> - Complete some initial data summarization (`.info()`, `.describe()`, `.value_counts()`, ...).
-> - Plot distributions of individual variables.
+- The data is coming from repos on github.  A list of repos has already been saved to github_list.py.  The acquire.py will use the api to return the desired information. 
+- Go to github and generate a personal access token https://github.com/settings/tokens.  Create a env.py and save the personal access token in your env.py file under the variable `github_token`.  Add your github username to your env.py file under the variable `github_username`.
+- The final function will return a pandas DataFrame
+- Import the acquire function from the acquire.py module
+- Complete some initial data summarization (`.info()`, `.describe()`, `.head()`, ...).
+- Plot distributions of individual variables.
 
 ### Prepare
 [(Back to top)](#table-of-contents)
 <!-- Describe your prepare process -->
-> - Store functions needed to prepare the zillow data; make sure the module contains the necessary imports to run the code. The final function should do the following:
+- Store functions needed to prepare the github readme data; make sure the module contains the necessary imports to run the code. The final function should do the following:
     - Split the data into train/validate/test.
     - Handle any missing values.
     - Handle erroneous data and/or outliers that need addressing.
     - Encode variables as needed.
     - Create any new features, if made for this project.
-> - Import the prepare function from the prepare.py module and use it to prepare the data in the Final Report Notebook.
+- Import the prepare function from the prepare.py module and use it to prepare the data in the Final Report Notebook.
 
 ### Explore
 [(Back to top)](#table-of-contents)
 <!-- Describe your explore process -->
-> - Answer key questions, my hypotheses, and figure out the features that can be used in a regression model to best predict the target variable, logerror. 
-> - Run at least 2 statistical tests in data exploration. Document my hypotheses, set an alpha before running the tests, and document the findings well.
-> - Create visualizations and run statistical tests that work toward discovering variable relationships (independent with independent and independent with dependent). The goal is to identify features that are correlated to tax_value (the target), identify any data integrity issues, and understand 'how the data works'. If there appears to be some sort of interaction or correlation, assume there is no causal relationship and brainstorm (and document) ideas on reasons there could be correlation.
-> - Summarize my conclusions, provide clear answers to my specific questions, and summarize any takeaways/action plan from the work above.
+- Answer key questions, my hypotheses, and figure out the features that can be used in a classification model to best predict the target variable, language. 
+- Run at least 2 statistical tests in data exploration. Document my hypotheses, set an alpha before running the tests, and document the findings well.
+- Create visualizations and run statistical tests that work toward discovering variable relationships (independent with independent and independent with dependent). The goal is to identify features that are correlated to language (the target), identify any data integrity issues, and understand 'how the data works'. If there appears to be some sort of interaction or correlation, assume there is no causal relationship and brainstorm (and document) ideas on reasons there could be correlation.
+- Summarize my conclusions, provide clear answers to my specific questions, and summarize any takeaways/action plan from the work above.
     
 ### Model
 [(Back to top)](#table-of-contents)
 <!-- Describe your modeling process -->
-> - Establish a baseline accuracy to determine if having a model is better than no model and train and compare at least 3 different models. Document these steps well.
-> - Train (fit, transform, evaluate) multiple models, varying the algorithm and/or hyperparameters you use.
-> - Compare evaluation metrics across all the models you train and select the ones you want to evaluate using your validate dataframe.
-> - Based on the evaluation of the models using the train and validate datasets, choose the best model to try with the test data, once.
-> - Test the final model on the out-of-sample data (the testing dataset), summarize the performance, interpret and document the results.
+- Establish a baseline accuracy to determine if having a model is better than no model and train and compare at least 3 different models. Document these steps well.
+- Train (fit, transform, evaluate) multiple models, varying the algorithm and/or hyperparameters you use.
+- Compare evaluation metrics across all the models you train and select the ones you want to evaluate using your validate dataframe.
+- Based on the evaluation of the models using the train and validate datasets, choose the best model to try with the test data, once.
+- Test the final model on the out-of-sample data (the testing dataset), summarize the performance, interpret and document the results.
 
 ### Evaluate
 [(Back to top)](#table-of-contents)
