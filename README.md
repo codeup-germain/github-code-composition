@@ -11,8 +11,16 @@
 <!-- Describe your project in brief -->
 
 # What is a github README.md?
+> - You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions.
 
+> - A README is often the first item a visitor will see when visiting your repository. README files typically include information on:
 
+    - What the project does
+    - Why the project is useful
+    - How users can get started with the project
+    - Where users can get help with your project
+    - Who maintains and contributes to the project
+    
 # Executive Summary
 <!-- Add a demo for your project -->
 - Conclustion: Coming Soon
@@ -23,7 +31,7 @@
 <!-- Add a table of contents for your project -->
 
 - [Project Title](#project-title)
-- [What is a github README.md?](#README.md)
+- [What is a github README.md?](#What-is-a-github-README.md?)
 - [Executive Summary](#executive-summary)
 - [Table of contents](#table-of-contents)
 - [Data Dictionary](#data-dictionary)
@@ -46,7 +54,7 @@
 
 
 # Data Science Pipeline
-<div style="text-align: right">[(Back to top)](#table-of-contents)</div>
+[(Back to top)](#table-of-contents)
 <!-- Describe your Data Science Pipeline process -->
 
 
