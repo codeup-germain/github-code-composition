@@ -46,7 +46,7 @@
 
 
 # Data Science Pipeline
-<p style="text-align:right">[(Back to top)](#table-of-contents)</p>
+<div style="text-align: right">[(Back to top)](#table-of-contents)</div>
 <!-- Describe your Data Science Pipeline process -->
 
 
