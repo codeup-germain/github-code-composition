@@ -93,21 +93,20 @@
 ### Model
 [(Back to top)](#table-of-contents)
 <!-- Describe your modeling process -->
-- Establish a baseline accuracy to determine if having a model is better than no model and train and compare at least 3 different models. Document these steps well.
-- Train (fit, transform, evaluate) multiple models, varying the algorithm and/or hyperparameters you use.
-- Compare evaluation metrics across all the models you train and select the ones you want to evaluate using your validate dataframe.
-- Based on the evaluation of the models using the train and validate datasets, choose the best model to try with the test data, once.
-- Test the final model on the out-of-sample data (the testing dataset), summarize the performance, interpret and document the results.
+- Established a baseline model of 31% accuacy using the most common language from our train data set, C#.
+- Created and optimized over 256 different models, including decision trees with varying branch depth, random forest with varying tree depth, knn models with varying neighbors, Support Vector Classification(one vs one, and many vs one),  Naive-Bayes Multinomial, and Logistic Regression models. 
+- Perfomed models on the entirety of the df and on Recursive Feature Engineered features with the top 28 features. Models were also split into ngrams of 1, 2, 3 and 4. The best performing model actually performed best with all features and and ngram size of 1. 
+- Best performing model was a decisicion tree with a max depth of three perfomed on lemmatized data using TFIDF vectorization. It had a 72% accuracy on Validate and 86% on train. This is wat we are going to run the final unseen data test on.   
 
 ### Evaluate
 [(Back to top)](#table-of-contents)
 <!-- Describe your evaluation process -->
-
+- Ran the best performing model on unseen test data. It doubled baseline prediction with an accuracy score of 62%. It looks like C# gives our models the largest problem. Most misclasifications where because of C#. In the future we may look at further cleaning of common words to reduce this misclassification
 
 # Conclusion
 [(Back to top)](#table-of-contents)
 <!-- Wrap up with conclusions and takeaways -->
-
+Our model could accuratley predict the language of the repos by 62% which had beat double the baseline model of 31%. Further cleaning of common words or stop words may improve the accuracy of the model. C# gave our models the hardest time with misclassifications of every other langauge falling under the C# moniker. 
 
 # Given More Time
 [(Back to top)](#table-of-contents)
