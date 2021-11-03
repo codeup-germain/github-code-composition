@@ -11,8 +11,8 @@
 <!-- Describe your project in brief -->
 
 # What is a github README.md?
-- You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions
-- A README is often the first item a visitor will see when visiting your repository. README files typically include information on: What the project does, why the project is useful, how users can get started with the project, where users can get help with your project, and who maintains and contributes to the project
+- You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions.
+- A README is often the first item a visitor will see when visiting your repository. README files typically include information on: What the project does, why the project is useful, how users can get started with the project, where users can get help with your project, and who maintains and contributes to the project.
 
 # Executive Summary
 <!-- Add a demo for your project -->
@@ -48,6 +48,14 @@
 | language        | 121 non-null: object | programming language project was written in |
 | readme_contents | 123 non_null: object | text contents of the readme                 |
 
+
+
+
+| Egineered Features | Datatype             | Definition                                  |
+|:----------------   |:---------------------|:--------------------------------------------|
+| clean              | 108 non-null: object | readme_contents cleaned                     |
+| stemmed            | 106 non-null: object | readme_contents stemmed                     |
+| lemmatized         | 108 non_null: object | readme_contents lemmatized                  |
 
 # Data Science Pipeline
 [(Back to top)](#table-of-contents)
