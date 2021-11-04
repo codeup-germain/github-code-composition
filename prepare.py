@@ -6,8 +6,10 @@ def prepare(df):
     and lemmatized columns along with its original contents.  
     '''
 
+    # Removing any language in java
     df = df[df.language != "Java"]
 
+    # Removing nulls from language
     df = df[~df['language'].isnull()]
     
 
