@@ -16,9 +16,14 @@
 
 # Executive Summary
 <!-- Add a demo for your project -->
-- Conclustion: Coming Soon
-- Key taweaways: Coming Soon
-- Recommendations: Coming Soon
+- Conclusion:  Our model could accuratley predict the language of the repos by 62% which had beat double the baseline model of 31%. Further cleaning of common words or stop words may improve the accuracy of the model. C# gave our models the hardest time with misclassifications of every other langauge falling under the C# moniker.
+
+- Key taweaways: 123 entries in total.  List of repos we gathered were mostly coded HTML, C#, Python, and JavaScript.  C# gave or models the biggest problem causing the most misclassifications because was shared common words, could try filtering those common words to improve accuracy.
+
+- Recommendation: We Recommend adding more GitHub repositories README.md files to the dataset to help prevent overfitting and to possibly increase the model accuracy.
+
+# Project Goals
+- To construct a classification model that would accurately predict the programming language that was used in a GitHub repository by scraping their respective readme.md files.
 
 # Table of contents
 <!-- Add a table of contents for your project -->
@@ -61,7 +66,7 @@
 [(Back to top)](#table-of-contents)
 <!-- Describe your Data Science Pipeline process -->
 
-
+### Acquire
 [(Back to top)](#table-of-contents)
 <!-- Describe your acquire process -->
 - The data is coming from repos on github.  A list of repos has already been saved to github_list.py.  The acquire.py will use the api to return the desired information. 
@@ -101,7 +106,7 @@
 ### Evaluate
 [(Back to top)](#table-of-contents)
 <!-- Describe your evaluation process -->
-- Ran the best performing model on unseen test data. It doubled baseline prediction with an accuracy score of 62%. It looks like C# gives our models the largest problem. Most misclasifications where because of C#. In the future we may look at further cleaning of common words to reduce this misclassification
+- Ran the best performing model on unseen test data. It doubled baseline prediction with an accuracy score of 62%. It looks like C# gives our models the largest problem. Most misclasifications where because of C#. In the future we may look at further cleaning of common words to reduce this misclassification.
 
 # Conclusion
 [(Back to top)](#table-of-contents)
@@ -111,11 +116,20 @@ Our model could accuratley predict the language of the repos by 62% which had be
 # Given More Time
 [(Back to top)](#table-of-contents)
 <!-- LET THEM KNOW WHAT YOU WISH YOU COULD HAVE DONE-->
-
+- With more time, we would like to use more repositories to potentially find more words that can help predict the programming language used.
 
 # Recreate This Project
 [(Back to top)](#table-of-contents)
 <!-- How can they do what you do?-->
+- [x] Read this README.md
+- [ ] Make a github personal access token
+- [ ] Go [here](https://github.com/settings/tokens) and generate a personal access token.  You do _not_ need select any scopes, i.e. leave all the checkboxes unchecked
+- [ ] Save it in your env.py file under the variable `github_token`
+- [ ] Add your github username to your env.py file under the variable `github_username`
+- [ ] 
+- [ ] Download the aquire.py, prepare.py, functions.py, model.py, github_list.py, and final.ipynb files into your working directory
+- [ ] From the terminal, run python acquire.py 
+- [ ] Run the final_report.ipynb notebook
 
 # Footer
 [(Back to top)](#table-of-contents)
