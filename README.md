@@ -20,7 +20,7 @@
 
 - Key taweaways: 123 entries in total.  List of repos we gathered were mostly coded HTML, C#, Python, and JavaScript.  C# gave or models the biggest problem causing the most misclassifications because was shared common words, could try filtering those common words to improve accuracy.
 
-- Recommendation: We Recommend adding more GitHub repositories README.md files to the dataset to help prevent overfitting and to possibly increase the model accuracy.
+- Recommendation: We recommend adding more GitHub repositories README.md files to the dataset to help prevent overfitting and to possibly increase the model accuracy.
 
 # Project Goals
 - To construct a classification model that would accurately predict the programming language that was used in a GitHub repository by scraping their respective readme.md files.
@@ -90,18 +90,18 @@
 ### Explore
 [(Back to top)](#table-of-contents)
 <!-- Describe your explore process -->
-- Answer key questions, my hypotheses, and figure out the features that can be used in a classification model to best predict the target variable, language. 
+- Answer key questions, our hypotheses, and figure out the features that can be used in a classification model to best predict the target variable, language. 
 - Run at least 2 statistical tests in data exploration. Document my hypotheses, set an alpha before running the tests, and document the findings well.
 - Create visualizations and run statistical tests that work toward discovering variable relationships (independent with independent and independent with dependent). The goal is to identify features that are correlated to language (the target), identify any data integrity issues, and understand 'how the data works'. If there appears to be some sort of interaction or correlation, assume there is no causal relationship and brainstorm (and document) ideas on reasons there could be correlation.
-- Summarize my conclusions, provide clear answers to my specific questions, and summarize any takeaways/action plan from the work above.
+- Summarize our conclusions, provide clear answers to my specific questions, and summarize any takeaways/action plan from the work above.
     
 ### Model
 [(Back to top)](#table-of-contents)
 <!-- Describe your modeling process -->
 - Established a baseline model of 31% accuacy using the most common language from our train data set, C#.
 - Created and optimized over 256 different models, including decision trees with varying branch depth, random forest with varying tree depth, knn models with varying neighbors, Support Vector Classification(one vs one, and many vs one),  Naive-Bayes Multinomial, and Logistic Regression models. 
-- Perfomed models on the entirety of the df and on Recursive Feature Engineered features with the top 28 features. Models were also split into ngrams of 1, 2, 3 and 4. The best performing model actually performed best with all features and and ngram size of 1. 
-- Best performing model was a decisicion tree with a max depth of three perfomed on lemmatized data using TFIDF vectorization. It had a 72% accuracy on Validate and 86% on train. This is wat we are going to run the final unseen data test on.   
+- Performed models on the entirety of the df and on Recursive Feature Engineered features with the top 28 features. Models were also split into ngrams of 1, 2, 3 and 4. The best performing model actually performed best with all features and and ngram size of 1. 
+- Best performing model was a decisicion tree with a max depth of three perfomed on lemmatized data using TFIDF vectorization. It had a 72% accuracy on Validate and 86% on train. This is what we are going to run the final unseen data test on.   
 
 ### Evaluate
 [(Back to top)](#table-of-contents)
@@ -132,6 +132,6 @@ Our model could accuratley predict the language of the repos by 62% which had be
 
 # Footer
 [(Back to top)](#table-of-contents)
-<!-- LET THEM KNOW WHO YOU ARE (linkedin links) close with a joke. -->
 
-If you have anyquestions please feel free to reach out to me.
+
+If you have any questions please feel free to reach out to any member of the team.
