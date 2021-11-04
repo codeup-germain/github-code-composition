@@ -1,5 +1,5 @@
 <!-- Add banner here -->
-![Banner](http://localhost:8888/view/Codeup%20(1280%20x%20650%20px).jpg)
+![Banner](https://github.com/codeup-germain/github-code-composition/blob/main/Codeup%20(1280%20x%20650%20px).jpg)
 
 # github-code-composition
 
