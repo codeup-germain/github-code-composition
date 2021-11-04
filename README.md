@@ -126,7 +126,6 @@ Our model could accuratley predict the language of the repos by 62% which had be
 - [ ] Go [here](https://github.com/settings/tokens) and generate a personal access token.  You do _not_ need select any scopes, i.e. leave all the checkboxes unchecked
 - [ ] Save it in your env.py file under the variable `github_token`
 - [ ] Add your github username to your env.py file under the variable `github_username`
-- [ ] 
 - [ ] Download the aquire.py, prepare.py, functions.py, model.py, github_list.py, and final.ipynb files into your working directory
 - [ ] From the terminal, run python acquire.py 
 - [ ] Run the final_report.ipynb notebook
